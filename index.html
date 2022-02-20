@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-12 col-lg-12 col-md-12">
+
+                        <nav>
+                            <a href="#" class="navbar-logo"><img src="images/img-logo.png"></a>
+
+                            <div class="navbar-content">
+                                <!-- navbar close icon -->
+                                <div class="navbar-close">
+                                    <div class="cross-wrap">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <!-- navbar menu  -->
+                                <ul class="nav-menu">
+                                    <li class="nav_item" onclick="submenuTrigger()">
+                                        <a href="#" class="nav_link">Home</a>
+                                        <div class="dropdown_toggle" onclick="submenuTrigger()">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <ul class="submenu">
+                                            <li><a class="submunu-link" href="#">Home One</a></li>
+                                            <li><a class="submunu-link" href="#">Home Two</a> </li>
+                                            <li><a class="submunu-link" href="#">Home Three</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav_item">
+                                        <a href="#" class="nav_link">Pages</a>
+                                        <div class="dropdown_toggle" onclick="submenuToggle()">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <ul class="submenu">
+                                            <li><a class="submunu-link" href="index.html">About Us</a></li>
+                                            <li><a class="submunu-link" href="index-2.html">Our Team</a> </li>
+                                            <li><a class="submunu-link" href="index-3.html">Team Details</a></li>
+                                            <li><a class="submunu-link" href="index-3.html">Careers</a></li>
+                                            <li><a class="submunu-link" href="index-3.html">Job</a></li>
+                                            <li><a class="submunu-link" href="index-3.html">Job Details</a></li>
+                                            <li><a class="submunu-link" href="index-3.html">FAQ</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav_item">
+                                        <a href="#" class="nav_link">Services</a>
+                                        <div class="dropdown_toggle" onclick="submenuToggle()">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <ul class="submenu">
+                                            <li><a class="submunu-link" href="index.html">Services Two</a></li>
+                                            <li><a class="submunu-link" href="index-2.html">Services Details</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav_item">
+                                        <a href="#" class="nav_link">Blog</a>
+                                        <div class="dropdown_toggle" onclick="submenuToggle()">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <ul class="submenu">
+                                            <li><a class="submunu-link" href="index.html">Blog Standart</a></li>
+                                            <li><a class="submunu-link" href="index-2.html">Blog Grid</a> </li>
+                                            <li><a class="submunu-link" href="index.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav_item">
+                                        <a href="#" class="nav_link">Portfolio</a>
+                                        <div class="dropdown_toggle" onclick="submenuToggle()">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <ul class="submenu">
+                                            <li><a class="submunu-link" href="index.html">Portfolio Two</a></li>
+                                            <li><a class="submunu-link" href="index.html">Portfolio Details</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav_item">
+                                        <a href="#" class="nav_link">Shop</a>
+                                        <div class="dropdown_toggle" onclick="submenuToggle()">
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <ul class="submenu">
+                                            <li><a class="submunu-link" href="index.html">Shop</a></li>
+                                            <li><a class="submunu-link" href="index-2.html">Product Details</a> </li>
+                                            <li><a class="submunu-link" href="index.html">Cart</a></li>
+                                            <li><a class="submunu-link" href="index.html">Checkout</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav_item">
+                                        <a href="#" class="nav_link">Contact</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Pushud Item -->
+                                <div class="nav-pushed-item">
+                                    <button>Consulting Now</button>
+                                </div>
+                            </div>
+
+                            <div class="nav-extra">
+                                <button class="nav-button">Consulting Now</button>
+                                <div class="menu-bar" onclick="dropMenuToggle()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                            </div>
+
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Section Start -->
+    <section class="main-section">
+        <div class="owl-carousel owl-theme" id="main_owl_carousel">
+            <div class="item">
+                <div class="slider-bg" style="background-image: url('./images/main-section-img-1.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="main-section-text">
+                                    <span> business & consulting </span>
+                                     <h1>Making Difference <br>  Growth Your Business <br>  With Modern Ideas</h1>
+                                     <ul>
+                                         <li>
+                                             <a href="#"><button class="first-btn"> Get Started Now</button></a>
+                                            </li>
+                                         <li>
+                                             <a href="#"><button class="second-btn">Our services</button></a>
+                                            </li>
+                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-bg" style="background-image: url('./images/main-section-img-2.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="main-section-text">
+                                    <span> business & consulting </span>
+                                     <h1>Making Difference <br>  Growth Your Business <br>  With Modern Ideas</h1>
+                                     <ul>
+                                         <li>
+                                             <a href="#"><button class="first-btn"> Get Started Now</button></a>
+                                            </li>
+                                         <li>
+                                             <a href="#"><button class="second-btn">Our services</button></a>
+                                            </li>
+                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+            </div>
+            <div class="item">
+                <div class="slider-bg" style="background-image: url('./images/main-section-img-3.jpg');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="main-section-text">
+                                    <span> business & consulting </span>
+                                     <h1>Making Difference <br>  Growth Your Business <br>  With Modern Ideas</h1>
+                                     <ul>
+                                         <li>
+                                             <a href="#"><button class="first-btn"> Get Started Now</button></a>
+                                            </li>
+                                         <li>
+                                             <a href="#"><button class="second-btn">Our services</button></a>
+                                            </li>
+                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Section End -->
+
+    <!-- About Section Start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row row1">
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                    <div class="section-img">
+                        <img src="images/About-section-img.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <span>About Us</span>
+                            <h2 class="title">Professional Business Guidance Agency</h2>
+                        </div>
+                        <div class="paragraph">
+                            <p class="mb-20">Sedut perspiciatis unde omnis iste natus error sit voluptat em accusantium
+                                doloremq laudantium, totam raperiaeaque ipsa quae ab illo inventore veritatis et quasi
+                            </p>
+                            <p>Doloremque laudantium, totam raperiaeaque ipsa quae ab illo inventore veritatis et quasi
+                            </p>
+                        </div>
+
+                        <ul class="list">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Business & Consulting Agency
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Awards Winning Business Company
+                            </li>
+                        </ul>
+
+                        <button>Learn More</button>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Service Section Start -->
+    <section class="service-section">
+        <div class="container">
+            <div class="section-title text-center both-border mb-30">
+                <span class="title-tag">Comany Services</span>
+                <h2 class="title">We Provide Most Exclusive <br> Service For Business</h2>
+            </div>
+
+            <div class="row row1">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-10">
+                    <div class="service-box text-center">
+                        <div class="icon">
+                            <img src="images/service-section-icon1.png" alt="Icon">
+                        </div>
+                        <h3><a href="#">Creative Idea</a></h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus erro volupta</p>
+                        <a href="#" class="service-link">
+                            <img src="images/icons8-right-arrow-50.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-10">
+                    <div class="service-box text-center">
+                        <div class="icon">
+                            <img src="images/service-section-img2.png" alt="Icon">
+                        </div>
+                        <h3><a href="#">Business Strategy</a></h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus erro volupta</p>
+                        <a href="#" class="service-link">
+                            <img src="images/icons8-right-arrow-50.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4  col-sm-6 col-10">
+                    <div class="service-box text-center">
+                        <div class="icon">
+                            <img src="images/service-section-icon3.png" alt="Icon">
+                        </div>
+                        <h3><a href="#">Relationship Buildup</a></h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus erro volupta</p>
+                        <a href="#" class="service-link">
+                            <img src="images/icons8-right-arrow-50.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="line-img">
+            <img src="images/service-section-img.png" alt="">
+        </div>
+    </section>
+    <!-- Service Section End  -->
+
+    <!-- Video Section Start -->
+    <section class="video-section" style="background-image: url('images/video-section-img.jpg');">
+        <div class="container">
+            <div class="row row-style ">
+
+                <div class="col-xl-7 col-lg-8 col-md-10 order-2 order-md-1 ">
+                    <div class="video-text">
+                        <div class="section-title  ">
+                            <span class="title-tag">Watch Videos</span>
+                            <h2 class="title">
+                                Exclusive Video Presentation <br> About Recent Project
+                            </h2>
+                        </div>
+                        <p>
+                            Ranim ad minima veniam, quis nostrum exercitationem ullam corpsuscipit
+                            laboriosam, nisi ut aliquid exea commodi consequa turuis autem
+                        </p>
+                        <button>Need Any Project</button>
+                    </div>
+                </div>
+
+                <div class="col-xl-5 col-lg-4 col-md-2  order-1 order-md-2">
+                    <div class="video-btn">
+                        <a href="#" class="play-btn popup-video">
+                            <img src="images/play-icon.svg" alt="">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Video Aection End -->
+
+    <!-- Feature Section Start -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="section-title text-center both-border mb-50">
+                <span class="title-tag"> Our Core Features </span>
+                <h2 class="title">We Are Specialist For Many <br> Business Solutions</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-10 col-tiny-12 col">
+                    <div class="feature-box">
+                        <div class="feature-bg bg-img-c" style="background-image: url('images/feauture-img-1.jpg');">
+                        </div>
+                        <div class="feature-desc">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <h4>Free Consulting</h4>
+                            <p>Join us for consultatoins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-10 col-tiny-12 col">
+                    <div class="feature-box">
+                        <div class="feature-bg bg-img-c" style="background-image: url('images/feature-img-2.jpg');">
+                        </div>
+                        <div class="feature-desc">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <h4>Business Growth</h4>
+                            <p>Join us for consultatoins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-10 col-tiny-12 col">
+                    <div class="feature-box">
+                        <div class="feature-bg bg-img-c" style="background-image: url('images/feature-img-3.jpg');">
+                        </div>
+                        <div class="feature-desc">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <h4>IT Consulting</h4>
+                            <p>Join us for consultatoins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-10 col-tiny-12 col">
+                    <div class="feature-box">
+                        <div class="feature-bg bg-img-c" style="background-image: url('images/feature-img-4.jpg');">
+                        </div>
+                        <div class="feature-desc">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <h4>Investment Plan</h4>
+                            <p>Join us for consultatoins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-10 col-tiny-12 col">
+                    <div class="feature-box">
+                        <div class="feature-bg bg-img-c" style="background-image: url('images/feature-img-5.jpg');">
+                        </div>
+                        <div class="feature-desc">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <h4>Financial Planning</h4>
+                            <p>Join us for consultatoins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-10 col-tiny-12 col">
+                    <div class="feature-box">
+                        <div class="feature-bg bg-img-c" style="background-image: url('images/feature-img-6.jpg');">
+                        </div>
+                        <div class="feature-desc">
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <h4>Financial Planning</h4>
+                            <p>Join us for consultatoins</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- row end -->
+        </div>
+    </section>
+    <!-- Feature Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <section class="wcu-section">
+        <div class="container">
+            <div class="wcu-inner">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="img-content">
+                            <img src="images/wcu-section-img.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="about-text">
+                            <div class="section-title">
+                                <span>What We Do</span>
+                                <h2 class="title">Why Choose Finsa Business Agency</h2>
+                            </div>
+                            <div class="paragraph">
+                                <p class="mb-20">Sedut perspiciatis unde omnis iste natus evoluptat em accusantium
+                                    doloremque laudantium</p>
+                            </div>
+
+                            <ul class="list">
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Specialist Company Advisor Team
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Understanding Machines OpenS tandard
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i>
+                                    Can Data Visualization Improve Mobile
+                                </li>
+                            </ul>
+
+                            <button>Learn More</button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <img src="images/wcu-line-1.png" class="line-1" alt="">
+                <img src="images/wcu-line-2.png" class="line-2" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section End -->
+
+
+    <!-- Fact Section start -->
+    <section class="fact-section">
+        <div class="container">
+
+            <div class="row fact-boxes">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <div class="fact-box">
+                        <div class="icon">
+                            <img src="images/statistics.png" alt="">
+                        </div>
+                        <h2 class="counter" data-target="3568" ></h2>
+                        <p class="title">Project Compalte</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <div class="fact-box">
+                        <div class="icon">
+                            <img src="images/preparation.png" alt="">
+                        </div>
+                        <h2 class="counter" data-target="7859"></h2>
+                        <p class="title">Satisfied Clients</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <div class="fact-box">
+                        <div class="icon">
+                            <img src="./images/target.png" alt="">
+                        </div>
+                        <h2 class="counter" data-target="6352"></h2>
+                        <p class="title">International Awards</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <div class="fact-box">
+                        <div class="icon">
+                            <img src="images/networking.svg" alt="">
+                        </div>
+                        <h2 class="counter" data-target="7865"></h2>
+                        <p class="title">Expert Team Members</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Fact Section end -->
+
+    <!-- Team Section Start -->
+    <section class="team-section">
+        <div class="container">
+
+            <div class="section-title">
+                <span class="title-tag"> Meet Our Advisors </span>
+                <h2 class="title">We Have An Exclusive <br> Team Member</h2>
+            </div>
+
+            <!-- owl-slider -->
+            <div class=" row-carousel">
+                <div class="owl-carousel owl-theme " id="owl_carousel2">
+
+
+                    <div class="item ">
+                        <div class="team-member">
+                            <div class="member-picture-wrap">
+                                <div class="member-picture">
+                                    <img src="images/team-section-img1.jpg" alt="TeamMember">
+                                    <div class="social-icons">
+                                        <a href="#" tabindex="0">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-behance"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-desc">
+                                <h3 class="name"><a href="team-details.html" tabindex="0">John N. Holmes</a></h3>
+                                <span class="pro">Business Developer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="team-member">
+                            <div class="member-picture-wrap">
+                                <div class="member-picture">
+                                    <img src="images/team-section-img2.jpg" alt="TeamMember">
+                                    <div class="social-icons">
+                                        <a href="#" tabindex="0">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-behance"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-desc">
+                                <h3 class="name"><a href="team-details.html" tabindex="0">Kenneth A.Spenser</a></h3>
+                                <span class="pro">Business Developer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="team-member">
+                            <div class="member-picture-wrap">
+                                <div class="member-picture">
+                                    <img src="images/team-section-img3.jpg" alt="TeamMember">
+                                    <div class="social-icons">
+                                        <a href="#" tabindex="0">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-behance"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-desc">
+                                <h3 class="name"><a href="team-details.html" tabindex="0">David K.Marble</a></h3>
+                                <span class="pro">Business Developer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="team-member">
+                            <div class="member-picture-wrap">
+                                <div class="member-picture">
+                                    <img src="images/team-section-img4.jpg" alt="TeamMember">
+                                    <div class="social-icons">
+                                        <a href="#" tabindex="0">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-behance"></i>
+                                        </a>
+                                        <a href="#" tabindex="0">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member-desc">
+                                <h3 class="name"><a href="team-details.html" tabindex="0">Raymond Grimes</a></h3>
+                                <span class="pro">Business Developer</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Skill Section Start -->
+    <section class="skill-section">
+        <div class="container">
+            <div class="row skill-row-style">
+                <div class="col-xl-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <span>Company Skills</span>
+                            <h2 class="title">We Have Experience <br>
+                                For Business Planning</h2>
+                        </div>
+                        <div class="paragraph">
+                            <p class="mb-20">Sedut perspiciatis unde omnis iste natus error sit voluptat em accusantium
+                                doloremque laudantium, totam raperiaeaque ipsa quae ab illo inventore veritatis et quasi
+                            </p>
+                            <p>But I must explain to you how all this mistaken idenouncing pleasure and praising pain
+                                was born and I will give completey account of the system, and expound the actual
+                                teachings of the great explorer of the truth, the master-builder of human happiness one
+                                rejects, dislikes, or avoid
+                            </p>
+                        </div>
+
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                <div class="col-xl-6">
+                    <!-- <div class="chart-boxes">
+
+                        <div class="chart-box">
+                            <div class="chart" data-percent="73">73%</div>
+
+
+                        </div> -->
+
+                        <div class="chart-box">
+                            <h4 class="title"></h4>
+                        </div>
+
+                        <div class="chart-box">
+                            <h4 class="title"></h4>
+                        </div>
+                        <div class="chart-box">
+                            <h4 class="title"></h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line-img"></div>
+    </section>
+    <!-- Skill Section End -->
+
+
+
+
+
+
+    <!-- Testimonial-section Start -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-10 offset-lg-6">
+                    <div class="section-title">
+                        <span class="title-span">Meet Our Advisors</span>
+                        <h2 class="title">We Have An Exclusive
+                            <br>Team Member</h2>
+                    </div>
+
+                    <div class="section-slider">
+                        <div class="owl-carousel owl-theme " id="owl_carousel3">
+                            <div class="item">
+                                <div class="content">
+                                    <p>
+                                        <span class="quote-top">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
+                                        On the other hand we denounce with righteou indg ation and dislike men who are
+                                        so
+                                        beguiled and demoraliz ed by the charms of pleasure of the moment
+                                        <br>
+                                        Dislike men who are so beguiled and demoraliz worlds ed by the charms of
+                                        pleasure of
+                                        the moment
+                                        <span class="quote-bottom">
+                                            <i class="fas fa-quote-right"></i>
+                                        </span>
+                                    </p>
+
+                                </div>
+
+                                <div class="author">
+                                    <div class="thumb">
+                                        <img src="images/testimonial-slider-img.png" alt="img">
+                                    </div>
+                                    <div class="desc">
+                                        <h4>Richard E. Harrisona</h4>
+                                        <span>CEO &amp; Founder</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="content">
+                                    <p>
+                                        <span class="quote-top">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam suscipit
+                                        debitis, molestias commodi et quaerat.
+                                        <br>
+                                        Dislike men who are so beguiled and demoraliz worlds ed by the charms of
+                                        pleasure of
+                                        the moment
+                                        <span class="quote-bottom">
+                                            <i class="fas fa-quote-right"></i>
+                                        </span>
+                                    </p>
+
+                                </div>
+                                <div class="author">
+                                    <div class="thumb">
+                                        <img src="images/testimonial-slider-img.png" alt="img">
+                                    </div>
+                                    <div class="desc">
+                                        <h4>Richard E. Harrisona</h4>
+                                        <span>CEO &amp; Founder</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="content">
+                                    <p>
+                                        <span class="quote-top">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
+                                        On the other hand we denounce with righteou indg ation and dislike men who are
+                                        so
+                                        beguiled and demoraliz ed by the charms of pleasure of the moment
+                                        <br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, optio?
+                                        <span class="quote-bottom">
+                                            <i class="fas fa-quote-right"></i>
+                                        </span>
+                                    </p>
+
+                                </div>
+                                <div class="author">
+                                    <div class="thumb">
+                                        <img src="images/testimonial-slider-img.png" alt="img">
+                                    </div>
+                                    <div class="desc">
+                                        <h4>Richard E. Harrisona</h4>
+                                        <span>CEO &amp; Founder</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="content">
+                                    <p>
+                                        <span class="quote-top">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
+                                        On the other hand we denounce with righteou indg ation and dislike men who are
+                                        so
+                                        beguiled and demoraliz ed by the charms of pleasure of the moment
+                                        <br>
+                                        Dislike men who are so beguiled and demoraliz worlds ed by the charms of
+                                        pleasure of
+                                        the moment
+                                        <span class="quote-bottom">
+                                            <i class="fas fa-quote-right"></i>
+                                        </span>
+                                    </p>
+
+                                </div>
+
+                                <div class="author">
+                                    <div class="thumb">
+                                        <img src="images/testimonial-slider-img.png" alt="img">
+                                    </div>
+                                    <div class="desc">
+                                        <h4>Richard E. Harrisona</h4>
+                                        <span>CEO &amp; Founder</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="content">
+                                    <p>
+                                        <span class="quote-top">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quaerat aspernatur
+                                        impedit libero dignissimos perferendis.
+                                        <br>
+                                        Dislike men who are so beguiled and demoraliz worlds ed by the charms of
+                                        pleasure of
+                                        the moment
+                                        <span class="quote-bottom">
+                                            <i class="fas fa-quote-right"></i>
+                                        </span>
+                                    </p>
+
+                                </div>
+
+                                <div class="author">
+                                    <div class="thumb">
+                                        <img src="images/testimonial-slider-img.png" alt="img">
+                                    </div>
+                                    <div class="desc">
+                                        <h4>Richard E. Harrisona</h4>
+                                        <span>CEO &amp; Founder</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="content">
+                                    <p>
+                                        <span class="quote-top">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
+                                        On the other hand we denounce with righteou indg ation and dislike men who are
+                                        so
+                                        beguiled and demoraliz ed by the charms of pleasure of the moment
+                                        <br>
+                                        Dislike men who are so beguiled and demoraliz worlds ed by the charms of
+                                        pleasure of
+                                        the moment
+                                        <span class="quote-bottom">
+                                            <i class="fas fa-quote-right"></i>
+                                        </span>
+                                    </p>
+
+                                </div>
+                                <div class="author">
+                                    <div class="thumb">
+                                        <img src="images/testimonial-slider-img.png" alt="img">
+                                    </div>
+                                    <div class="desc">
+                                        <h4>Richard E. Harrisona</h4>
+                                        <span>CEO &amp; Founder</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="content">
+                                    <p>
+                                        <span class="quote-top">
+                                            <i class="fas fa-quote-left"></i>
+                                        </span>
+                                        On the other hand we denounce with righteou indg ation and dislike men who are
+                                        so
+                                        beguiled and demoraliz ed by the charms of pleasure of the moment
+                                        <br>
+                                        Dislike men who are so beguiled and demoraliz worlds ed by the charms of
+                                        pleasure of
+                                        the moment
+                                        <span class="quote-bottom">
+                                            <i class="fas fa-quote-right"></i>
+                                        </span>
+                                    </p>
+
+                                </div>
+                                <div class="author">
+                                    <div class="thumb">
+                                        <img src="images/testimonial-slider-img.png" alt="img">
+                                    </div>
+                                    <div class="desc">
+                                        <h4>Richard E. Harrisona</h4>
+                                        <span>CEO &amp; Founder</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="owl-nav">
+                                <div class="owl-prev">
+                                    <i class="fas fa-long-arrow-right"></i>
+                                </div>
+                                <div class="owl-next">next</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="line-img">
+            <img src="./images/testimonial-img.png" alt="">
+        </div>
+
+    </section>
+    <!-- Testimoinals-section End -->
+
+
+
+    <!-- Client Section Start -->
+    <section class="client-section">
+        <div class="container">
+            <div class="row row-carousel">
+                <div class="owl-carousel owl-theme " id="owl_carousel">
+                    <div class="item ">
+                        <div class="img-content">
+                            <img src="./images/client-slider-img1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="img-content">
+                            <img src="./images/client-slider-img2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="img-content">
+                            <img src="./images/client-slider-img3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="img-content">
+                            <img src="./images/client-slider-img4.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="img-content">
+                            <img src="./images/client-slider-img5.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item ">
+                        <div class="img-content">
+                            <img src="./images/client-slider-img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="img-content">
+                            <img src="./images/client-slider-img5.png" alt="">
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Section End -->
+
+    <!-- Latest Section Start -->
+    <section class="latest-section">
+        <div class="container">
+            <div class="row row-style">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                    <div class="section-title">
+                        <span>Important Articles</span>
+                        <h2 class="title">Something Know Our <br>Latest News & Blog</h2>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+                    <div class="button-content">
+                        <button>View All News</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="boxs-content">
+                <div class="row row-style-2">
+                    <div class="col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="box">
+                            <div class="img-bg" style="background-image: url('./images/latest-post-1.jpg');"></div>
+                            <div class="text-content">
+                                <span>
+                                    <i class="fas fa-calendar-alt"></i> 25 AUG 2020
+                                </span>
+                                <h5><a href="#">How Performance Visiblety With GitLab CI And Hood</a></h5>
+                                <p>Sedut perspiciatis unde omnis nat erroroluptat accusantium laudantim totam
+                                    raperiaeaqupsa quae</p>
+                                <a href="#">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="box">
+                            <div class="img-bg" style="background-image: url('./images/latest-post-2.jpg');"></div>
+                            <div class="text-content">
+                                <span>
+                                    <i class="fas fa-calendar-alt"></i> 25 AUG 2020
+                                </span>
+                                <h5><a href="#">Inspired Design Decisions With Max Huber Turne</a></h5>
+                                <p>Vero eos et accusamus et iustoys odio dignissimos ducimu blanditiis praesentium
+                                    voluptatum</p>
+                                <a href="#">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-4 col-sm-6 col-12">
+                        <div class="box">
+                            <div class="img-bg" style="background-image: url('./images/latest-post-3.jpg');"></div>
+                            <div class="text-content">
+                                <span>
+                                    <i class="fas fa-calendar-alt"></i> 25 AUG 2020
+                                </span>
+                                <h5><a href="#">Understanding Machines An Open Standard For</a></h5>
+                                <p>Power of choice is untrammelled and when nothing prevents beings able to do what we
+                                    like best</p>
+                                <a href="#">Learn More <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Section End -->
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container">
+            <div class="footer-widget">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 col-lg-4 col-sm-5 col-5 order-1 ">
+                        <div class="widget site-info-widget">
+                            <div class="footer-logo">
+                                <img src="images/img-logo.png" alt="Finsa">
+                            </div>
+                            <p>Power of choice is untrammelled &amp; when nothing prevents our being able</p>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-7 order-2">
+                        <div class="widget newsletter-widget">
+                            <h4 class="widget-title">Subscribe Our Newsletters</h4>
+                            <div class="newsletter-form">
+                                <form action="#">
+                                    <input type="email" placeholder="Enter Your Email">
+                                    <button type="submit" class="main-btn">Subscribe Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6  order-3">
+                        <div class="widget nav-widget">
+                            <h4 class="widget-title">Quick Links</h4>
+                            <ul>
+                                <li><a href="#">Company History</a></li>
+                                <li><a href="#">Latest News &amp; Blog</a></li>
+                                <li><a href="#">Popular Services</a></li>
+                                <li><a href="#">Business &amp; Consulting</a></li>
+                                <li><a href="#">Financial Planning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 order-xl-4 col-md-5 order-md-4 col-lg-5 col-sm-12  order-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 col-6">
+                                <div class="widget nav-widget">
+                                    <h4 class="widget-title">Company</h4>
+                                    <ul>
+                                        <li><a href="#">About Comapny</a></li>
+                                        <li><a href="#">World Wide Clients</a></li>
+                                        <li><a href="#">Happy People’s</a></li>
+                                        <li><a href="#">Winning Awards</a></li>
+                                        <li><a href="#">Company Statics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-6">
+                                <div class="widget contact-widget">
+                                    <h4 class="widget-title">Contact Us</h4>
+                                    <p>Untrammelled &amp; nothing preven our being able</p>
+                                    <ul class="contact-infos">
+                                        <li>
+                                            <a href="tel:+0123456789">
+                                                <i class="fas fa-phone"></i>
+                                                +012 (345) 6789
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:support@gmail.com">
+                                                <i class="far fa-envelope-open"></i>
+                                                support@gmail.com
+                                            </a>
+                                        </li>
+                                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Broklyn Street USA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 order-xl-5 col-md-4 order-md-5 col-lg-4 col-sm-6  col-6 order-4">
+                        <div class="widget follow-widget">
+                            <h4 class="widget-title">Follow Us</h4>
+                            <div class="images-box">
+
+                                <div class="img"
+                                    style="background-image: url('./images/footer-instagram-img1.jpg.crdownload');">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+
+
+                                <div class="img"
+                                    style="background-image: url('./images/footer-instagram-img2.jpg.crdownload');">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+
+
+
+                                <div class="img"
+                                    style="background-image: url('./images/footer-instagram-img3.jpg.crdownload');">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+
+
+                                <div class="img"
+                                    style="background-image: url('./images/footer-instagram-img4.jpg.crdownload');">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+
+
+                                <div class="img"
+                                    style="background-image: url('./images/footer-instagram-img5.jpg.crdownload');">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+
+
+                                <div class="img"
+                                    style="background-image: url('./images/footer-instagram-img6.jpg.crdownload');">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p class="copyright-text">
+                    <span class="span1">Copy@ <a href="#">Finsa</a>. Example -2020</span>
+                    <span class="span2">All Right Reserved Design By Example</span>
+                </p>
+
+                <a href="#" class="back-to-top" style="cursor: pointer;"><i class="fas fa-angle-up"></i></a>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <script src="/path/to/easy-pie-chart.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="jquery.easypiechart.js"></script>
+
+    <script>
+        $(function () {
+            $('.chart').easyPieChart({
+                //your options goes here
+            });
+        });
+    </script>
+</body>
+
+</html>

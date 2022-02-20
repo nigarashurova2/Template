@@ -1,0 +1,170 @@
+.team-section {
+    padding: 90px 0 100px;
+
+    .container {
+        max-width: 70%;
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+
+            span.title-tag {
+                color: #ff4a17;
+                position: relative;
+                padding: 0px 30px;
+                font-weight: 700;
+                width: 100%;
+                font-size: 17px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 20px;
+                    height: 3px;
+                    background-color: #ff4a17;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 20px;
+                    height: 3px;
+                    background-color: #ff4a17;
+                }
+
+            }
+
+            .title {
+                font-size: 40px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 800;
+                margin: 10px 0;
+
+            }
+        }
+
+        .item {
+            // background-color: hotpink;
+
+            .team-member {
+                .member-picture-wrap {
+                    position: relative;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        right: 0px;
+                        bottom: -10px;
+                        width: 80px;
+                        height: 70px;
+                        background-color: #ff4a17;
+                        -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+                        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+                        z-index: -1;
+                    }
+
+                    .member-picture {
+                        img {
+                            width: 96%;
+                        }
+
+                        &::before {
+                            position: absolute;
+                            z-index: 2;
+                            top: 0;
+                            left: 0;
+                            background-color: #ff4a17;
+                            width: 80px;
+                            height: 70px;
+                            -webkit-clip-path: polygon(100% 0, 0 100%, 0 0);
+                            clip-path: polygon(100% 0, 0 100%, 0 0);
+                            -webkit-transition: all 0.3s ease-out 0s;
+                            transition: all 0.3s ease-out 0s;
+                            content: "";
+                            opacity: 1;
+                        }
+
+                        .social-icons {
+                            position: absolute;
+                            z-index: 3;
+                            top: 5px;
+                            left: 15px;
+                            -webkit-transition: all 0.3s ease-out 0s;
+                            transition: all 0.3s ease-out 0s;
+                            text-align: center;
+
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                left: -15px;
+                                top: -5px;
+                                width: 95px;
+                                height: 85px;
+                                z-index: -1;
+                                background-color: #ff4a17;
+                                -webkit-clip-path: polygon(100% 0, 0 100%, 0 0);
+                                clip-path: polygon(100% 0, 0 100%, 0 0);
+                                opacity: 0.5;
+                                -webkit-transition: all 0.3s ease-out 0s;
+                                transition: all 0.3s ease-out 0s;
+                            }
+                            
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
+                    }
+
+                }
+
+                .member-desc {
+                    text-align: center;
+
+                    .name {
+                        font-size: 20px;
+                        font-weight: 600;
+                        letter-spacing: -1px;
+
+                        a {
+                            text-decoration: none;
+                            color: #14212b;
+
+                            &:hover {
+                                transition: all 0.6s ease;
+                                color: #ff4a17;
+
+                            }
+                        }
+
+
+                    }
+
+                    .pro {
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .team-section {
+        .container {
+            max-width: 80%;
+        }
+    }
+}

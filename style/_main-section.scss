@@ -1,0 +1,162 @@
+.main-section {
+    
+    #main_owl_carousel {
+        .item {
+            .slider-bg {
+                width: 100%;
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                z-index: -3;
+                display: flex;
+                align-items: center;
+
+                .container {
+                    max-width: 70%;
+
+                    .main-section-text {
+                        span {
+                            color: white;
+                            text-transform: uppercase;
+                            margin-bottom: 30px;
+                            padding-left: 35px;
+                            font-size: 20px;
+                            font-family: 'Nunito Sans', sans-serif;
+                            letter-spacing: 1px;
+                            position: relative;
+                            animation: slideTagLine .6s linear .8s backwards;
+                            &::before {
+                                position: absolute;
+                                content: "";
+                                left: 8px;
+                                top: 50%;
+                                width: 15px;
+                                height: 15px;
+                                background-color: white;
+                                transform: rotate(-25deg) translateY(-50%);
+                                clip-path: polygon(0 0, 0 100%, 100% 0);
+                            }
+                        }
+
+                        h1 {
+                            color: #fff;
+                            font-size: 65px;
+                            line-height: 1.1;
+                            font-weight: 700;
+                            margin: 15px 0 20px;
+                            animation: slideTagLine .6s linear .8s backwards;
+                            
+                        }
+                        @keyframes  slideTagLine {
+                            0% {
+                                opacity: 0;
+                                transform: translateY(50px);
+                            }
+                        }
+
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            li {
+                                list-style: none;
+                                margin-right: 10px;
+                                a {
+                                    text-decoration: none;
+
+                                    button{
+                                    border-radius: 30px;
+                                    background-color: #ff4a17;
+                                    color: #fff;
+                                    text-decoration: none;
+                                    height: 50px;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    border-radius: 35px;
+                                    border: none;
+                                    cursor: pointer;
+                                    padding: 0 30px;
+                                    transition: all 0.3s ease-out 0s;
+                                    position: relative;
+                                    z-index: 77;
+                                    
+                                    &:hover {
+                                        transition: all 0.4s ease-out 0s;
+                                        background-color: #14212b;
+                                    }
+
+                                    &::before {
+                                        position: absolute;
+                                        right: 13px;
+                                        top: 4px;
+                                        bottom: 4px;
+                                        background-color: #14212b;
+                                        -webkit-transition: all 0.3s ease-out 0s;
+                                        transition: all 0.3s ease-out 0s;
+                                        content: "";
+                                        z-index: -1;
+                                        width: 60px;
+                                        border-radius: 30px;
+
+                                    }
+                                    }
+                                    .first-btn{
+                                        animation: slideButton1 .6s linear .8s backwards;
+                                    }
+                                    .second-btn {
+                                        animation: slideButton2 .6s linear .8s backwards;
+                                    }
+                                    @keyframes  slideButton1 {
+                                        0% {
+                                            opacity: 0;
+                                            transform: translateX(-40px);
+                                        }
+                                    }
+
+                                    @keyframes  slideButton2 {
+                                        0% {
+                                            opacity: 0;
+                                            transform: translateX(40px);
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: -2;
+                    opacity: 0.7;
+                    top: 0;
+                    left: 0;
+                    background-color: #14212b;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .main-section {
+        .container {
+            max-width: 80% !important;
+            .slider-bg {
+                height: 80vh !important;
+            }
+
+            h1{
+                font-size: 38px !important;
+                margin-bottom: 30px !important;
+            }
+        }
+    }
+}

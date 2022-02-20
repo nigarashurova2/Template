@@ -1,0 +1,107 @@
+.skill-section {
+    position: relative;
+    padding-bottom: 80px;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        height: 700px;
+        width: 700px;
+        border-radius: 50%;
+        background-color: #f5f5f5;
+        transform: translate(-240px, -50%);
+        z-index: -1;
+    }
+
+    .container {
+        max-width: 70%;
+        .canvas {
+            border: 70px solid black !important;
+        }
+        .skill-row-style{
+            display: flex;
+            align-items: center;
+        }
+        .about-text {
+            padding-left: 40px;
+            font-family: 'Source Sans Pro', sans-serif;
+
+            span {
+                color: #ff4a17;
+                position: relative;
+                padding-left: 30px;
+                font-weight: 700;
+                font-size: 16px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 20px;
+                    height: 3px;
+                    background-color: #ff4a17;
+                }
+            }
+
+            h2.title {
+                margin: 20px 0;
+                font-size: 36px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700 !important;
+            }
+
+            p {
+                font-family: "Nunito Sans", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #7c7c7c;
+                overflow-x: hidden;
+                font-size: 14px;
+                line-height: 1.8;
+                width: 100%;
+            }
+
+
+            button {
+                border-radius: 30px;
+                background-color: #ff4a17;
+                color: #fff;
+                text-decoration: none;
+                height: 55px;
+                // line-height: 70px;
+                font-size: 16px;
+                font-weight: 700;
+                border-radius: 35px;
+                border: none;
+                cursor: pointer;
+                padding: 0 30px;
+                transition: all 0.3s ease-out 0s;
+                position: relative;
+                z-index: 77;
+
+                &:hover {
+                    transition: all 0.4s ease-out 0s;
+                    background-color: #14212b;
+                }
+
+                &::before {
+                    position: absolute;
+                    right: 13px;
+                    top: 4px;
+                    bottom: 4px;
+                    background-color: #14212b;
+                    -webkit-transition: all 0.3s ease-out 0s;
+                    transition: all 0.3s ease-out 0s;
+                    content: "";
+                    z-index: -1;
+                    width: 60px;
+                    border-radius: 30px;
+
+                }
+            }
+        }
+    }
+}
